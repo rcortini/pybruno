@@ -36,8 +36,13 @@ jobs:
         cd pybruno/node
         npm install
 
+    - name: Install the pybruno package
+      run: |
+        pip install -e .
+
     - name: Run tests
       run: |
+        cd tests
         pytest
 
     - name: Build distribution package
