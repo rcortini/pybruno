@@ -8,7 +8,7 @@ class PostInstallCommand(install):
     def run(self):
         install.run(self)
         # Run `npm install` in the node directory
-        node_dir = os.path.join(self.install_lib, 'my_hybrid_package', 'node')
+        node_dir = os.path.join(self.install_lib, 'pybruno', 'node')
         subprocess.check_call(['npm', 'install'], cwd=node_dir)
 
 setup(
