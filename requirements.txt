@@ -1,3 +1,4 @@
 # Project dependencies
 setuptools>=42
 wheel
+pytest
