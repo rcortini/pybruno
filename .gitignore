@@ -64,3 +64,9 @@ tnsnames.ora
 #ipython notebook
 .ipynb_checkpoints/
 __pycache__
+
+# python build stuff
+*egg-info
+
+# node stuff
+package-lock.json

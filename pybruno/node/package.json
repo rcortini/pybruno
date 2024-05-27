@@ -1,0 +1,10 @@
+{
+    "name": "bru-parser",
+    "version": "0.0.1",
+    "description": "Python utilities for parsing BRU files",
+    "main": "parseBru.js",
+    "dependencies": {
+      "ohm-js": "^16.0.0",
+      "lodash": "^4.17.21"
+    }
+}
