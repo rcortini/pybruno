@@ -1,3 +1,5 @@
+<img src="https://github.com/rcortini/pybruno/blob/main/pybruno.png" alt="pybruno" width="200"/>
+
 # PyBruno
 
 ![Tests](https://github.com/rcortini/pybruno/actions/workflows/main.yml/badge.svg)
