@@ -1,5 +1,7 @@
 # PyBruno
 
+![Tests](https://github.com/rcortini/pybruno/actions/workflows/main.yml/badge.svg)
+
 **pybruno** is a Python library containing utilities to parse BRU files, a special markup language defined in [Bruno](https://usebruno.com) - a lightweight, open-source alternative to Postman/Insomnia. It leverages a hybrid Python/JavaScript approach to handle the parsing logic effectively.
 
 ## Table of Contents
