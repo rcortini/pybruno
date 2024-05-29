@@ -1,1 +1,1 @@
-from .bru_parser import parse_bru_file, parse_env_file
+from .bru_parser import parse_bru_file, parse_env_file, substitute_variable_in_string

@@ -53,6 +53,9 @@ def parse_bru_file(
         return substitute_variables(parsed_result, environment)
     else:
         return parsed_result
+    
+def substitute_variable_in_string(txt, vars):
+    return re.sub(r'\{\{(\w+)\}\}', lambda match: vars.get(match.group(1), match.group(0)), txt)
         
 def substitute_variables(obj, env_vars):
     """
@@ -64,7 +67,7 @@ def substitute_variables(obj, env_vars):
         return [substitute_variables(elem, env_vars) for elem in obj]
     elif isinstance(obj, str):
         # Substitute variables in strings
-        return re.sub(r'\{\{(\w+)\}\}', lambda match: env_vars.get(match.group(1), match.group(0)), obj)
+        return substitute_variable_in_string(obj, env_vars)
     else:
         return obj
 
